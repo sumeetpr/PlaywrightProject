@@ -1,0 +1,196 @@
+{
+  "config": {
+    "configFile": "C:\\WorkSpace\\PlaywrightProject\\playwright.config.ts",
+    "rootDir": "C:/WorkSpace/PlaywrightProject",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/WorkSpace/PlaywrightProject/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chrome:latest:MacOS Ventura@lambdatest",
+        "name": "chrome:latest:MacOS Ventura@lambdatest",
+        "testDir": "C:/WorkSpace/PlaywrightProject",
+        "testIgnore": [],
+        "testMatch": [
+          "/tests/register.test.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/WorkSpace/PlaywrightProject/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chrome:latest:Windows 11@lambdatest",
+        "name": "chrome:latest:Windows 11@lambdatest",
+        "testDir": "C:/WorkSpace/PlaywrightProject",
+        "testIgnore": [],
+        "testMatch": [
+          "/tests/register.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.33.0",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\register.test.ts",
+      "file": "tests/register.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "register the user",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome:latest:MacOS Ventura@lambdatest",
+              "projectName": "chrome:latest:MacOS Ventura@lambdatest",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 26873,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-05-25T17:20:51.843Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome:latest:Windows 11@lambdatest",
+              "projectName": "chrome:latest:Windows 11@lambdatest",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 29401,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-05-25T17:20:51.939Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e8a2cb919faa658e8b31-89b0336626c973bc5ae2",
+          "file": "tests/register.test.ts",
+          "line": 5,
+          "column": 5
+        },
+        {
+          "title": "login the user",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome:latest:MacOS Ventura@lambdatest",
+              "projectName": "chrome:latest:MacOS Ventura@lambdatest",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 20778,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-05-25T17:21:18.718Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            },
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome:latest:Windows 11@lambdatest",
+              "projectName": "chrome:latest:Windows 11@lambdatest",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "timedOut",
+                  "duration": 30002,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"page\".\u001b[39m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-05-25T17:21:21.342Z",
+                  "attachments": []
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e8a2cb919faa658e8b31-9a1cf82dfee788b6cc81",
+          "file": "tests/register.test.ts",
+          "line": 27,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
