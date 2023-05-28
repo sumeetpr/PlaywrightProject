@@ -1,4 +1,4 @@
-import { test } from "@playwright/test";
+import { test } from "../customFixtures/pageFixture";
 import moment from "moment";
 
 test("handle date picker with simply using fill method", async ({page}) => {

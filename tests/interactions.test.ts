@@ -1,4 +1,5 @@
-import { expect, test } from "@playwright/test";
+import { expect } from "@playwright/test";
+import { test } from "../customFixtures/pageFixture";
 
 test("basic form interactions", async ({ page })=> {
 

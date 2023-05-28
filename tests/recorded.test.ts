@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test } from "../customFixtures/pageFixture";
 
 test('test', async ({ page }) => {
   await page.goto('https://ecommerce-playground.lambdatest.io/');

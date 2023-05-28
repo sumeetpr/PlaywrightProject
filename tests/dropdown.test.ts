@@ -1,4 +1,4 @@
-import { test } from "@playwright/test";
+import { test } from "../customFixtures/pageFixture";
 
 test("handle single select dropdown", async ({page})=>{
 

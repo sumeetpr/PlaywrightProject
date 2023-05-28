@@ -1,4 +1,6 @@
-import { Page, test } from "@playwright/test";
+
+import { Page } from "@playwright/test";
+import { test } from "../customFixtures/pageFixture";
 
 let facebookPage : Page;
 test("handle single window popup", async ({page})=> {
